@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "ReactCumple",
+    "slug": "reactcumple",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Necesitamos acceder a tu ubicación para guardar el lugar del cumpleaños",
+        "NSLocationAlwaysUsageDescription": "Necesitamos acceder a tu ubicación para guardar el lugar del cumpleaños"
+      },
+      "bundleIdentifier": "com.reactcumple"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "NOTIFICATIONS",
+        "SCHEDULE_EXACT_ALARM"
+      ],
+      "package": "com.reactcumple"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#ffffff",
+          "sounds": ["./assets/notification.wav"]
+        }
+      ]
+    ],
+    "sdkVersion": "52.0.0"
+  },
+  "name": "reactcumple",
+  "displayName": "reactcumple"
+}
